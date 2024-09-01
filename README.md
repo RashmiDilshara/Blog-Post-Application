@@ -27,5 +27,5 @@ This is a minimal blog post application that allows users to create, view, and d
 
 #### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/basic-blog-post-app.git
-cd basic-blog-post-app
+git clone https://github.com/RashmiDilshara/Blog-Post-Application
+cd Blog-Post-Application
