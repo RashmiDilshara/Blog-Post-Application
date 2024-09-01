@@ -1,0 +1,220 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section {
+    background-color: #003300; /* Deep Green Background Color */
+    background-image: url('https://source.unsplash.com/1600x900/?forest');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+    border-bottom: 6px solid #004d00; /* Darker Green Border */
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-section h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Bright Yellow Text Color */
+    font-weight: 700;
+}
+
+.hero-section p {
+    position: relative;
+    z-index: 1;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #d3d3d3; /* Light Gray Text Color */
+    font-weight: 400;
+}
+
+.btn-hero {
+    position: relative;
+    z-index: 1;
+    padding: 15px 30px;
+    border-radius: 50px;
+    background: #004d00; /* Dark Green Button Background */
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-hero:hover {
+    background: #003300; /* Even Darker Green on Hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.btn-new-post {
+    background: #004d00; /* Dark Green Background */
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    padding: 12px 25px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    font-weight: 600;
+}
+
+.btn-new-post:hover {
+    background: #003300; /* Even Darker Green on Hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+    border-radius: 12px;
+}
+
+.modal-header {
+    background-color: #004d00; /* Dark Green Modal Header */
+    color: white;
+    border-bottom: 2px solid #003300; /* Even Darker Green Border */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.modal-footer {
+    border-top: 1px solid #e9ecef;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.modal-footer .btn-primary {
+    background-color: #004d00; /* Dark Green Button */
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.modal-footer .btn-primary:hover {
+    background-color: #003300; /* Even Darker Green on Hover */
+}
+
+.post {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.post-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0d0e0d; /* Dark Green Text Color */
+    margin-bottom: 15px;
+}
+
+.post-content {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.post-date {
+    font-size: 0.9rem;
+    color: #6c757d; /* Gray Text Color */
+    margin-bottom: 20px;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    font-weight: 600;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-delete i {
+    margin-right: 8px;
+}
+
+.btn-black {
+    background-color: black;
+    border-color: black;
+    color: white; /* Optional: Change text color to white */
+}
+
+
+.spinner-border {
+    display: none;
+    width: 3rem;
+    height: 3rem;
+    border-width: 0.4rem;
+    margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+
+    .btn-hero {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .container {
+        padding: 25px;
+    }
+}
